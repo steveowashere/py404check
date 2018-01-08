@@ -21,5 +21,5 @@ with open('URLList.txt', 'r', encoding='utf-8') as URLList:
                 print(time.strftime("[%H:%M:%S]") + ' | Notice: This page reports not found (404)')
                 DownList.write(item)
             elif e.reason != 'Not Found':
-                print(time.strftime("[%H:%M:%S]") + ' | Error: ' + e.reason + ' ' + itemStrip)
-                ErrorList.write(item)
+                print(time.strftime("[%H:%M:%S]") + ' | Error: ' + e.reason + ' - ' + itemStrip)
+                ErrorList.write(time.strftime("[%H:%M:%S]") + ' | Error: ' + e.reason + ' - ' + item)
