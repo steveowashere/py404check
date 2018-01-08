@@ -1,5 +1,5 @@
-#Python 2
-#Check if page is 404. 
+# 404Checker
+# Copyright (c) 2017-2018 Steven Phillips
 import urllib.request
 import urllib.parse
 import time
